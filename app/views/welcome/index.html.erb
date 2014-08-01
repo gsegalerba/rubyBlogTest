@@ -1,4 +1,10 @@
 <h1>Bienvenido al Blog de Guille</h1>
 
-<%= link_to 'Mi Blog', controller: 'articles' %>
 
+<% if @current_user %>
+<%= link_to 'Mi Blog', controller: 'articles' %><br>
+<%= link_to 'Logout', destroy_user_session_path, method: :delete  %>
+
+<% else %>
+<%= link_to 'Login', new_user_session_path %>
+<% end %>

@@ -27,6 +27,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'annotate', '~> 2.6.5'
+# Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 3.2.4'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
